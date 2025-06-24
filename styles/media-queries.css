@@ -40,7 +40,7 @@
 
     main section div#form {
         position: absolute;
-        top: 12.5%;
+        top: 5%;
         left: 50%;
         float: right;
         width: 50%;
@@ -48,7 +48,7 @@
     }
 
     div#form hr {
-        visibility: hidden;
-        margin: 10px;
+        visibility: visible;
+        margin: 40px 0px;
     }
 }
