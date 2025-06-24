@@ -19,7 +19,7 @@
 }
 
 html, body {
-    background: linear-gradient(transparent, black), url(../images/background.jpg) center center / cover no-repeat;
+    background: var(--theme-color2-darker);
 }
 
 /* MAIN BOX */
@@ -35,15 +35,13 @@ main section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    height: fit-content;
-    border-radius: 20px;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     background: white;
 }
 
 section div#hero {
-    height: 200px;
+    height: 250px;
     background: black url(../images/hero.jpg) center -20px / cover no-repeat;
 }
 
@@ -68,7 +66,7 @@ div#form > p {
 }
 
 div#form hr {
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 /* FORM FIELD STYLE */

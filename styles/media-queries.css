@@ -1,9 +1,32 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 600px) {
+    main section {
+        width: 380px;
+        height: fit-content;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    div#hero {
+        height: 200px;
+    }
+
+    div#form hr {
+        margin: 20px 0px;
+    }
+}
+
 @media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(transparent, black), url(../images/background.jpg) center center / cover no-repeat;
+    }
+
     main section {
         width: 700px;
         height: 315px;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
     main section div#hero {
@@ -26,6 +49,10 @@
 }
 
 @media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(transparent, black), url(../images/background.jpg) center center / cover no-repeat;
+    }
+
     main section {
         width: 768px;
         height: 420px;
