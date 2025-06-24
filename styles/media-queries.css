@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    main section {
+        width: 700px;
+        height: 315px;
+    }
+
+    main section div#hero {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    main section div#form {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    div#form hr {
+        visibility: hidden;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main section {
+        width: 768px;
+        height: 420px;
+    }
+
+    main section div#hero {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    main section div#form {
+        position: absolute;
+        top: 12.5%;
+        left: 50%;
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form hr {
+        visibility: hidden;
+        margin: 10px;
+    }
+}

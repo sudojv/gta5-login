@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SignPainter';
+    src: url(../fonts/SignPainter.ttf) format('truetype');
+}
+
+:root {
+    --theme-color1: #C5B278;
+    --theme-color2: #019A3F;
+    --theme-color1-darker: hsl(45, 40%, 40%);
+    --theme-color2-darker: hsl(144, 99%, 20%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, black), url(../images/background.jpg) center center / cover no-repeat;
+}
+
+/* MAIN BOX */
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+main section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+section div#hero {
+    height: 200px;
+    background: black url(../images/hero.jpg) center -20px / cover no-repeat;
+}
+
+/* FORM STYLE */
+
+section div#form {
+    padding: 10px;
+}
+
+div#form h1 {
+    color: var(--theme-color2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'SignPainter';
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+div#form > p {
+    font: normal 1em Arial;
+    text-align: center;
+}
+
+div#form hr {
+    margin: 15px auto;
+}
+
+/* FORM FIELD STYLE */
+
+div#form div.field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: var(--theme-color1);
+}
+
+div.field label {
+    visibility: hidden;
+}
+
+div.field input {
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 1px solid var(--theme-color1);
+    border-radius: 10px;
+    padding-left: 10px;
+    font: lighter 1em Arial;
+}
+
+div.field span.material-symbols-outlined {
+    width: 40px;
+    padding-left: 5px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: -35%;
+}
+
+/* FORGOT PASSWORD STYLE */
+
+div#form p#forgot-password {
+    text-align: right;
+    font: bold 1em Arial;
+    margin-bottom: 15px;
+}
+
+p#forgot-password a {
+    color: var(--theme-color2);
+    text-decoration: none;
+}
+
+p#forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* SUBMIT BUTTON STYLE */
+
+div#form input[type='submit'] {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background: var(--theme-color2);
+    font: normal 1.25em Arial;
+    cursor: pointer;
+}
+
+div#form input[type='submit']:hover {
+    color: white;
+    background: var(--theme-color2-darker);
+}
